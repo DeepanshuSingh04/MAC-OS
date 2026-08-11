@@ -4,7 +4,14 @@ import "./windows.scss"
 
 const MacWindows = ({children}) => {
   return (
-    <Rnd>
+    <Rnd
+        default={{              //ab jo default size chahiye window khulte hi wo set kri hain hamne
+            width: "40vw",
+            height: "40vh",
+            x: 300,
+            y: 200
+        }}
+    >
         <div className="window">
             <div className="nav">
                 <div className="dots">
